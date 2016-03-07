@@ -1,0 +1,106 @@
+{
+
+  parserClass='io.github.jhsx.flow.render.parser.FlowRenderParser'
+  parserUtilClass="io.github.jhsx.flow.render.parser.FlowRenderParserUtil"
+
+
+  elementTypeHolderClass='io.github.jhsx.flow.render.FlowRenderTypes'
+  elementTypeClass='io.github.jhsx.flow.render.psi.FlowRenderCompositeElementType'
+  tokenTypeClass='io.github.jhsx.flow.render.psi.FlowRenderTokenType'
+
+  psiClassPrefix='FlowRender'
+  psiImplClassSuffix='Impl'
+  psiPackage='io.github.jhsx.flow.render.psi'
+  psiImplPackage='io.github.jhsx.flow.render.psi.impl'
+//  psiImplUtilClass="io.github.jhsx.flow.render.psi.impl.FlowRenderPsiImplUtil"
+  parserUtilClass="io.github.jhsx.flow.render.parser.FlowRenderParserUtil"
+  extends(".*Expr")=Expression
+  extends(".*Statement")=Statement
+  consumeTokenMethod(".*Expr")="consumeTokenFast"
+
+  tokens = [
+    COMMENT              =  ''
+    LDOUBLE_BRACE        =  '{%'
+    RDOUBLE_BRACE        =  '%}'
+    LBRACE               =  '{'
+    RBRACE               =  '}'
+    LPAREN               =  '('
+    RPAREN               =  ')'
+    EQ                   =  '=='
+    ASSIGN               =  '='
+    NOT_EQ               =  '!='
+    NOT                  =  '!'
+    COND_OR              =  '||'
+    COND_AND             =  '&&'
+    BIT_OR               =  '|'
+    LESS_OR_EQUAL        =  '<='
+    LESS                 =  '<'
+    GREATER_OR_EQUAL     =  '>='
+    GREATER              =  '>'
+    DOT                  =  '.'
+    COMMA                =  ','
+    IF                   =  'if'
+    END                  =  'end'
+    ELSE                 =  'else'
+    BLOCK                =  'block'
+    RANGE                =  'range'
+    YIELD                =  'yield'
+    EXTENDS              =  'extends'
+    INCLUDE              =  'include'
+    FROM                 =  'from'
+    SET                  =  'set'
+    UNSET                =  'unset'
+  ]
+
+   pin("(.)+Statement$") = 2
+}
+
+File ::= ExtendsStatement? FromStatementList StatementList
+FromStatementList ::= FromStatement*
+
+FromStatement    ::= '{%' 'from' StringLiteral '%}'
+ExtendsStatement ::= '{%' 'extends' StringLiteral '%}'
+IncludeStatement ::= '{%' 'include' StringLiteral '%}'
+
+StatementList    ::= (TEXT+ | IncludeStatement | IfStatement | BlockStatement | RangeStatement | YieldStatement | PipelineStatement | SetStatement | UnsetStatement)*
+
+fake Statement ::=
+
+FieldChain      ::= '.' IDENT FieldChain?
+FieldChainExpr  ::= (LiteralExpr|ParenthesesExpr)? FieldChain
+
+Expression ::=        OrExpr
+                    | AndExpr
+                    | ConditionalExpr
+                    | FieldChainExpr
+                    | LiteralExpr
+                    | ParenthesesExpr
+
+private rel_op  ::= '==' | '!=' | '<' | '<=' | '>' | '>='
+
+OrExpr          ::= Expression '||' Expression
+AndExpr         ::= Expression '&&' Expression
+LiteralExpr     ::= Literal
+ConditionalExpr ::= Expression rel_op Expression
+
+Literal ::= NumberLiteral | IdentifierLiteral | StringLiteral
+
+StringLiteral     ::= RAW_STRING|STRING
+IdentifierLiteral ::= IDENT
+NumberLiteral     ::= NUMBER
+ParenthesesExpr   ::= '(' Pipeline ')' {pin=1}
+
+Pipeline      ::= Expression Expression*  Pipe? {pin=1}
+Pipe          ::= '|' Expression+ Pipe? {pin=1}
+
+IfStatement       ::= '{%' 'if' Pipeline '%}' StatementList (EndStatement|ElseIfStatement|ElseStatement)
+ElseIfStatement   ::= '{%' 'else' 'if' Pipeline '%}' StatementList (EndStatement|ElseIfStatement|ElseStatement)
+ElseStatement     ::= '{%' 'else' '%}' StatementList EndStatement
+EndStatement      ::= '{%' 'end' '%}'
+RangeStatement    ::= '{%' 'range' RangeAssign? Pipeline '%}' StatementList (EndStatement|ElseStatement)
+RangeAssign       ::= Expression (',' Expression)? '=' {pin=3}
+PipelineStatement ::= '{%' Pipeline '%}'
+BlockStatement    ::= '{%' 'block' IdentifierLiteral Pipeline? '%}' StatementList EndStatement
+YieldStatement    ::= '{%' 'yield' IdentifierLiteral Pipeline? '%}'
+SetStatement      ::= '{%' 'set' IdentifierLiteral (',' IdentifierLiteral)* '=' Expression (',' Expression)* '%}'
+UnsetStatement    ::= '{%' 'unset' IdentifierLiteral* '%}'
