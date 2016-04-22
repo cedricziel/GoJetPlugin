@@ -16,21 +16,25 @@ public class FlowRenderRangeStatementImpl extends FlowRenderStatementImpl implem
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitRangeStatement(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitRangeStatement(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
+  }
+
+  @Override
+  @NotNull
+  public List<FlowRenderExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderExpression.class);
   }
 
   @Override
   @Nullable
   public FlowRenderPipeline getPipeline() {
     return findChildByClass(FlowRenderPipeline.class);
-  }
-
-  @Override
-  @Nullable
-  public FlowRenderRangeAssign getRangeAssign() {
-    return findChildByClass(FlowRenderRangeAssign.class);
   }
 
   @Override

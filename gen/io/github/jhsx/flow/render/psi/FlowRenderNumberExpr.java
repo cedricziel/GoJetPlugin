@@ -5,9 +5,6 @@ import java.util.List;
 import org.jetbrains.annotations.*;
 import com.intellij.psi.PsiElement;
 
-public interface FlowRenderFromStatementList extends PsiElement {
-
-  @NotNull
-  List<FlowRenderFromStatement> getFromStatementList();
+public interface FlowRenderNumberExpr extends FlowRenderExpression {
 
 }

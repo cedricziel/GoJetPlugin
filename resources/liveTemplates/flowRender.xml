@@ -1,6 +1,6 @@
 <templateSet group="flowRender">
 
-    <template name="if" value="{% if $expression$ %}$END${% end %}" description="New If Condition" toReformat="false"
+    <template name="if" value="{{ if $expression$ }}$END${{ end }}" description="New If Condition" toReformat="false"
               toShortenFQNames="false">
         <variable name="expression" expression="" defaultValue="true" alwaysStopAt="true"/>
         <context>
@@ -8,7 +8,7 @@
         </context>
     </template>
 
-    <template name="echo" value="{% $expression$ %}$END$" description="Echo value" toReformat="false"
+    <template name="echo" value="{{ $expression$ }}$END$" description="Echo value" toReformat="false"
               toShortenFQNames="false">
         <variable name="expression" expression="" defaultValue="true" alwaysStopAt="true"/>
         <context>
@@ -17,7 +17,7 @@
     </template>
 
 
-    <template name="yield" value="{% yield $expression$ %}$END$" description="New yield block" toReformat="false"
+    <template name="yield" value="{{ yield $expression$ }}$END$" description="New yield block" toReformat="false"
               toShortenFQNames="false">
         <variable name="expression" expression="" defaultValue="true" alwaysStopAt="true"/>
         <context>
@@ -25,7 +25,7 @@
         </context>
     </template>
 
-    <template name="include" value="{% include &quot;$expression$&quot; %}$END$" description="New include block" toReformat="false"
+    <template name="include" value="{{ include &quot;$expression$&quot; }}$END$" description="New include block" toReformat="false"
               toShortenFQNames="false">
         <variable name="expression" expression="" defaultValue="true" alwaysStopAt="true"/>
         <context>
@@ -33,15 +33,7 @@
         </context>
     </template>
 
-    <template name="from" value="{% from &quot;$expression$&quot; %}$END$" description="New from block" toReformat="false"
-              toShortenFQNames="false">
-        <variable name="expression" expression="" defaultValue="true" alwaysStopAt="true"/>
-        <context>
-            <option name="FLOWRENDER" value="true"/>
-        </context>
-    </template>
-
-    <template name="extends" value="{% extends &quot;$expression$&quot; %}$END$" description="New extends"
+    <template name="extends" value="{{ extends &quot;$expression$&quot; }}$END$" description="New extends"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="expression" expression="" defaultValue="true" alwaysStopAt="true"/>
@@ -50,7 +42,17 @@
         </context>
     </template>
 
-    <template name="block" value="{% block $name$ %}$END${% end %}" description="New Block"
+    <template name="block" value="{{ block $name$ }}$END${{ end }}" description="New Block"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="name" expression="" defaultValue="true" alwaysStopAt="true"/>
+        <context>
+            <option name="FLOWRENDER" value="true"/>
+        </context>
+    </template>
+
+
+    <template name="range" value="{{ range $name$ }}$END${{ end }}" description="New Block"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="name" expression="" defaultValue="true" alwaysStopAt="true"/>

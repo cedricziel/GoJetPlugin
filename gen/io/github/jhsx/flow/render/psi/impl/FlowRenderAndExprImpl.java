@@ -16,8 +16,12 @@ public class FlowRenderAndExprImpl extends FlowRenderExpressionImpl implements F
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitAndExpr(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitAndExpr(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 

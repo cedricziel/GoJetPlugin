@@ -7,11 +7,11 @@ import com.intellij.psi.PsiElement;
 
 public interface FlowRenderRangeStatement extends FlowRenderStatement {
 
-  @Nullable
-  FlowRenderPipeline getPipeline();
+  @NotNull
+  List<FlowRenderExpression> getExpressionList();
 
   @Nullable
-  FlowRenderRangeAssign getRangeAssign();
+  FlowRenderPipeline getPipeline();
 
   @Nullable
   FlowRenderStatement getStatement();

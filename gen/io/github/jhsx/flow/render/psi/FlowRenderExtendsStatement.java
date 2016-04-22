@@ -8,6 +8,6 @@ import com.intellij.psi.PsiElement;
 public interface FlowRenderExtendsStatement extends FlowRenderStatement {
 
   @Nullable
-  FlowRenderStringLiteral getStringLiteral();
+  FlowRenderStringExpr getStringExpr();
 
 }

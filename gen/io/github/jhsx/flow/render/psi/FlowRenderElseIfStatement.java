@@ -7,8 +7,11 @@ import com.intellij.psi.PsiElement;
 
 public interface FlowRenderElseIfStatement extends FlowRenderStatement {
 
-  @Nullable
-  FlowRenderPipeline getPipeline();
+  @NotNull
+  List<FlowRenderExpression> getExpressionList();
+
+  @NotNull
+  List<FlowRenderPipeline> getPipelineList();
 
   @Nullable
   FlowRenderStatement getStatement();

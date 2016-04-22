@@ -5,7 +5,7 @@ import java.util.List;
 import org.jetbrains.annotations.*;
 import com.intellij.psi.PsiElement;
 
-public interface FlowRenderRangeAssign extends PsiElement {
+public interface FlowRenderCallExpr extends FlowRenderExpression {
 
   @NotNull
   List<FlowRenderExpression> getExpressionList();

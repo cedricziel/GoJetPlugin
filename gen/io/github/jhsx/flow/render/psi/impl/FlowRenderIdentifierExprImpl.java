@@ -8,17 +8,16 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static io.github.jhsx.flow.render.FlowRenderTypes.*;
-import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import io.github.jhsx.flow.render.psi.*;
 
-public class FlowRenderStatementImpl extends ASTWrapperPsiElement implements FlowRenderStatement {
+public class FlowRenderIdentifierExprImpl extends FlowRenderExpressionImpl implements FlowRenderIdentifierExpr {
 
-  public FlowRenderStatementImpl(ASTNode node) {
+  public FlowRenderIdentifierExprImpl(ASTNode node) {
     super(node);
   }
 
   public void accept(@NotNull FlowRenderVisitor visitor) {
-    visitor.visitStatement(this);
+    visitor.visitIdentifierExpr(this);
   }
 
   public void accept(@NotNull PsiElementVisitor visitor) {

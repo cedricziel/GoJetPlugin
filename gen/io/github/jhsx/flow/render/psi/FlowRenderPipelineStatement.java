@@ -8,6 +8,9 @@ import com.intellij.psi.PsiElement;
 public interface FlowRenderPipelineStatement extends FlowRenderStatement {
 
   @NotNull
-  FlowRenderPipeline getPipeline();
+  List<FlowRenderExpression> getExpressionList();
+
+  @NotNull
+  List<FlowRenderPipeline> getPipelineList();
 
 }

@@ -16,8 +16,12 @@ public class FlowRenderElseStatementImpl extends FlowRenderStatementImpl impleme
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitElseStatement(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitElseStatement(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 

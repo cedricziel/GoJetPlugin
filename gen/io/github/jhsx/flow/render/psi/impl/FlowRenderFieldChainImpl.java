@@ -17,8 +17,12 @@ public class FlowRenderFieldChainImpl extends ASTWrapperPsiElement implements Fl
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitFieldChain(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitFieldChain(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 

@@ -53,22 +53,24 @@ TEXT = [^{]*
 <YYINITIAL> {
          {TEXT}                          { return TEXT; }
         \{\*(.)*\*\}                     { return COMMENT; }
-        "{%"                             { yybegin(ST_ACTION);return LDOUBLE_BRACE; }
+        "{{"                             { yybegin(ST_ACTION);return LDOUBLE_BRACE; }
         "{"                              { return TEXT; }
 }
 
 
 <ST_ACTION> {
   {STR} ( [^\"\\\n\r] | "\\" ("\\" | {STR} | {ESCAPES} | [0-8xuU] ) )* {STR}? { return STRING; }
-  "'" [^']* "'"?                                                              { return RAW_STRING; }
+  "`" [^`]* "`"?                                                              { return RAW_STRING; }
   {WHITE_SPACE}         { return com.intellij.psi.TokenType.WHITE_SPACE; }
 
-  "{%"                  { return LDOUBLE_BRACE; }
-  "%}"                  { yybegin(YYINITIAL);return RDOUBLE_BRACE; }
+  "{{"                  { return LDOUBLE_BRACE; }
+  "}}"                  { yybegin(YYINITIAL);return RDOUBLE_BRACE; }
+
   "("                   { return LPAREN; }
   ")"                   { return RPAREN; }
   "=="                  { return EQ; }
   "="                   { return ASSIGN; }
+  ":="                   { return SCOPE_ASSIGN; }
   "!="                  { return NOT_EQ; }
   "!"                   { return NOT; }
   "||"                  { return COND_OR; }
@@ -78,24 +80,33 @@ TEXT = [^{]*
   "<"                   { return LESS; }
   ">="                  { return GREATER_OR_EQUAL; }
   ">"                   { return GREATER; }
+
+  "+"                   { return PLUS;}
+  "-"                   { return MINUS;}
+
+  "/"                   { return DIV;}
+  "*"                   { return MUL;}
+  "%"                   { return MOD;}
+
   "."                   { return DOT; }
   ","                   { return COMMA; }
+  ":"                   { return COLON; }
+  "?"                   { return TERNARY; }
+  ";"                   { return COLONCOMMA; }
 
   "if"                  { return IF; }
-  "end"                 { return END; }
   "else"                { return ELSE; }
+  "end"                 { return END; }
+
   "block"               { return BLOCK; }
-  "range"               { return RANGE; }
+
   "yield"               { return YIELD; }
   "extends"             { return EXTENDS; }
   "include"             { return INCLUDE; }
-  "from"                { return FROM; }
-  "set"                 { return SET; }
-  "unset"               { return UNSET; }
+  "import"              { return IMPORT; }
+  "range"               { return RANGE; }
 
-  {IDENT}               { return IDENT; }
-
-
+  {IDENT}                                  { return IDENT; }
   {NUM_FLOAT}"i"                           {  return NUMBER; }
   {NUM_FLOAT}                              {  return NUMBER; }
   {DIGIT}+"i"                              {  return NUMBER; }

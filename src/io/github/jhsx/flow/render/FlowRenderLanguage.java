@@ -32,7 +32,7 @@ public class FlowRenderLanguage extends Language implements TemplateLanguage {
         super("flowRender");
     }
 
-    public static FileType getDefaultTemplateLang() {
+    public static LanguageFileType getDefaultTemplateLang() {
         return StdFileTypes.HTML;
     }
 

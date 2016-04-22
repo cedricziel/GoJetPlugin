@@ -16,15 +16,19 @@ public class FlowRenderFieldChainExprImpl extends FlowRenderExpressionImpl imple
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitFieldChainExpr(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitFieldChainExpr(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 
   @Override
-  @Nullable
+  @NotNull
   public FlowRenderExpression getExpression() {
-    return findChildByClass(FlowRenderExpression.class);
+    return findNotNullChildByClass(FlowRenderExpression.class);
   }
 
   @Override

@@ -7,12 +7,20 @@ import com.intellij.psi.PsiElement;
 
 public class FlowRenderVisitor extends PsiElementVisitor {
 
+  public void visitAdditiveExpr(@NotNull FlowRenderAdditiveExpr o) {
+    visitExpression(o);
+  }
+
   public void visitAndExpr(@NotNull FlowRenderAndExpr o) {
     visitExpression(o);
   }
 
   public void visitBlockStatement(@NotNull FlowRenderBlockStatement o) {
     visitStatement(o);
+  }
+
+  public void visitCallExpr(@NotNull FlowRenderCallExpr o) {
+    visitExpression(o);
   }
 
   public void visitConditionalExpr(@NotNull FlowRenderConditionalExpr o) {
@@ -47,19 +55,19 @@ public class FlowRenderVisitor extends PsiElementVisitor {
     visitExpression(o);
   }
 
-  public void visitFromStatement(@NotNull FlowRenderFromStatement o) {
-    visitStatement(o);
+  public void visitFieldExpr(@NotNull FlowRenderFieldExpr o) {
+    visitExpression(o);
   }
 
-  public void visitFromStatementList(@NotNull FlowRenderFromStatementList o) {
-    visitPsiElement(o);
-  }
-
-  public void visitIdentifierLiteral(@NotNull FlowRenderIdentifierLiteral o) {
-    visitPsiElement(o);
+  public void visitIdentifierExpr(@NotNull FlowRenderIdentifierExpr o) {
+    visitExpression(o);
   }
 
   public void visitIfStatement(@NotNull FlowRenderIfStatement o) {
+    visitStatement(o);
+  }
+
+  public void visitImportStatement(@NotNull FlowRenderImportStatement o) {
     visitStatement(o);
   }
 
@@ -67,16 +75,16 @@ public class FlowRenderVisitor extends PsiElementVisitor {
     visitStatement(o);
   }
 
-  public void visitLiteral(@NotNull FlowRenderLiteral o) {
-    visitPsiElement(o);
-  }
-
-  public void visitLiteralExpr(@NotNull FlowRenderLiteralExpr o) {
+  public void visitMultiplicativeExpr(@NotNull FlowRenderMultiplicativeExpr o) {
     visitExpression(o);
   }
 
-  public void visitNumberLiteral(@NotNull FlowRenderNumberLiteral o) {
-    visitPsiElement(o);
+  public void visitNotExpr(@NotNull FlowRenderNotExpr o) {
+    visitExpression(o);
+  }
+
+  public void visitNumberExpr(@NotNull FlowRenderNumberExpr o) {
+    visitExpression(o);
   }
 
   public void visitOrExpr(@NotNull FlowRenderOrExpr o) {
@@ -99,15 +107,7 @@ public class FlowRenderVisitor extends PsiElementVisitor {
     visitStatement(o);
   }
 
-  public void visitRangeAssign(@NotNull FlowRenderRangeAssign o) {
-    visitPsiElement(o);
-  }
-
   public void visitRangeStatement(@NotNull FlowRenderRangeStatement o) {
-    visitStatement(o);
-  }
-
-  public void visitSetStatement(@NotNull FlowRenderSetStatement o) {
     visitStatement(o);
   }
 
@@ -119,12 +119,12 @@ public class FlowRenderVisitor extends PsiElementVisitor {
     visitPsiElement(o);
   }
 
-  public void visitStringLiteral(@NotNull FlowRenderStringLiteral o) {
-    visitPsiElement(o);
+  public void visitStringExpr(@NotNull FlowRenderStringExpr o) {
+    visitExpression(o);
   }
 
-  public void visitUnsetStatement(@NotNull FlowRenderUnsetStatement o) {
-    visitStatement(o);
+  public void visitTernaryExpr(@NotNull FlowRenderTernaryExpr o) {
+    visitExpression(o);
   }
 
   public void visitYieldStatement(@NotNull FlowRenderYieldStatement o) {

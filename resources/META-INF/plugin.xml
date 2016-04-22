@@ -38,10 +38,10 @@
     </module-components>
 
     <extensions defaultExtensionNs="com.intellij">
-
-        <!-- FlowRender -->
+        <lang.substitutor language="HTML" implementationClass="io.github.jhsx.flow.render.lang.FlowSubstitutor" />
+         <!-- FlowRender -->
         <lang.fileViewProviderFactory language="flowRender"
-                                      implementationClass="io.github.jhsx.flow.render.file.FlowRenderFileViewProvider Factory"/>
+                                      implementationClass="io.github.jhsx.flow.render.file.FlowRenderFileViewProviderFactory"/>
         <lang.parserDefinition language="flowRender"
                                implementationClass="io.github.jhsx.flow.render.FlowRenderParserDefinition"/>
         <editorHighlighterProvider filetype="flowRender"

@@ -16,15 +16,25 @@ public class FlowRenderIncludeStatementImpl extends FlowRenderStatementImpl impl
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitIncludeStatement(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitIncludeStatement(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 
   @Override
-  @Nullable
-  public FlowRenderStringLiteral getStringLiteral() {
-    return findChildByClass(FlowRenderStringLiteral.class);
+  @NotNull
+  public List<FlowRenderExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderExpression.class);
+  }
+
+  @Override
+  @NotNull
+  public List<FlowRenderPipeline> getPipelineList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderPipeline.class);
   }
 
 }

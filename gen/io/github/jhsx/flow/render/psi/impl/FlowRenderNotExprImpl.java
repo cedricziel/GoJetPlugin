@@ -10,21 +10,25 @@ import com.intellij.psi.util.PsiTreeUtil;
 import static io.github.jhsx.flow.render.FlowRenderTypes.*;
 import io.github.jhsx.flow.render.psi.*;
 
-public class FlowRenderLiteralExprImpl extends FlowRenderExpressionImpl implements FlowRenderLiteralExpr {
+public class FlowRenderNotExprImpl extends FlowRenderExpressionImpl implements FlowRenderNotExpr {
 
-  public FlowRenderLiteralExprImpl(ASTNode node) {
+  public FlowRenderNotExprImpl(ASTNode node) {
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitNotExpr(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitLiteralExpr(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 
   @Override
-  @NotNull
-  public FlowRenderLiteral getLiteral() {
-    return findNotNullChildByClass(FlowRenderLiteral.class);
+  @Nullable
+  public FlowRenderExpression getExpression() {
+    return findChildByClass(FlowRenderExpression.class);
   }
 
 }

@@ -24,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 public class FlowRenderFileTypeFactory extends FileTypeFactory {
     @Override
     public void createFileTypes(@NotNull FileTypeConsumer consumer) {
-        consumer.consume(FlowRenderFileType.INSTANCE, "flowRender");
-        consumer.consume(FlowRenderFileType.INSTANCE, new WildcardFileNameMatcher("*.flow.html"));
+        consumer.consume(FlowRenderFileType.INSTANCE, "jet");
+        consumer.consume(FlowRenderFileType.INSTANCE, new WildcardFileNameMatcher("*.jet.html"));
     }
 }

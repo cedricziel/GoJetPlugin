@@ -5,6 +5,9 @@ import java.util.List;
 import org.jetbrains.annotations.*;
 import com.intellij.psi.PsiElement;
 
-public interface FlowRenderIdentifierLiteral extends PsiElement {
+public interface FlowRenderFieldExpr extends FlowRenderExpression {
+
+  @NotNull
+  FlowRenderFieldChain getFieldChain();
 
 }

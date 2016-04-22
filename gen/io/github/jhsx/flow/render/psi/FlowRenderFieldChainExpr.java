@@ -7,7 +7,7 @@ import com.intellij.psi.PsiElement;
 
 public interface FlowRenderFieldChainExpr extends FlowRenderExpression {
 
-  @Nullable
+  @NotNull
   FlowRenderExpression getExpression();
 
   @NotNull

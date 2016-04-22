@@ -33,9 +33,7 @@ public interface FlowRenderTokens {
             YIELD,
             INCLUDE,
             BLOCK,
-            FROM,
             EXTENDS,
-            SET,
-            UNSET
+            IMPORT
     );
 }

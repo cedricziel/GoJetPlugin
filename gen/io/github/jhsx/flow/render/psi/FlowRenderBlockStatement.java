@@ -10,11 +10,11 @@ public interface FlowRenderBlockStatement extends FlowRenderStatement {
   @Nullable
   FlowRenderEndStatement getEndStatement();
 
-  @Nullable
-  FlowRenderIdentifierLiteral getIdentifierLiteral();
+  @NotNull
+  List<FlowRenderExpression> getExpressionList();
 
-  @Nullable
-  FlowRenderPipeline getPipeline();
+  @NotNull
+  List<FlowRenderPipeline> getPipelineList();
 
   @Nullable
   FlowRenderStatementList getStatementList();

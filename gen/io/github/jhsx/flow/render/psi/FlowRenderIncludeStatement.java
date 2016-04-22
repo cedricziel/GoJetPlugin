@@ -7,7 +7,10 @@ import com.intellij.psi.PsiElement;
 
 public interface FlowRenderIncludeStatement extends FlowRenderStatement {
 
-  @Nullable
-  FlowRenderStringLiteral getStringLiteral();
+  @NotNull
+  List<FlowRenderExpression> getExpressionList();
+
+  @NotNull
+  List<FlowRenderPipeline> getPipelineList();
 
 }

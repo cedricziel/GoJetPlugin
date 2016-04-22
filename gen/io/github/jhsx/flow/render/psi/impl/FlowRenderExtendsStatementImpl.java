@@ -16,15 +16,19 @@ public class FlowRenderExtendsStatementImpl extends FlowRenderStatementImpl impl
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitExtendsStatement(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitExtendsStatement(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 
   @Override
   @Nullable
-  public FlowRenderStringLiteral getStringLiteral() {
-    return findChildByClass(FlowRenderStringLiteral.class);
+  public FlowRenderStringExpr getStringExpr() {
+    return findChildByClass(FlowRenderStringExpr.class);
   }
 
 }

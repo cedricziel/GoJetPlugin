@@ -10,8 +10,10 @@ import io.github.jhsx.flow.render.psi.impl.*;
 
 public interface FlowRenderTypes {
 
+  IElementType ADDITIVE_EXPR = new FlowRenderCompositeElementType("ADDITIVE_EXPR");
   IElementType AND_EXPR = new FlowRenderCompositeElementType("AND_EXPR");
   IElementType BLOCK_STATEMENT = new FlowRenderCompositeElementType("BLOCK_STATEMENT");
+  IElementType CALL_EXPR = new FlowRenderCompositeElementType("CALL_EXPR");
   IElementType CONDITIONAL_EXPR = new FlowRenderCompositeElementType("CONDITIONAL_EXPR");
   IElementType ELSE_IF_STATEMENT = new FlowRenderCompositeElementType("ELSE_IF_STATEMENT");
   IElementType ELSE_STATEMENT = new FlowRenderCompositeElementType("ELSE_STATEMENT");
@@ -20,72 +22,83 @@ public interface FlowRenderTypes {
   IElementType EXTENDS_STATEMENT = new FlowRenderCompositeElementType("EXTENDS_STATEMENT");
   IElementType FIELD_CHAIN = new FlowRenderCompositeElementType("FIELD_CHAIN");
   IElementType FIELD_CHAIN_EXPR = new FlowRenderCompositeElementType("FIELD_CHAIN_EXPR");
-  IElementType FROM_STATEMENT = new FlowRenderCompositeElementType("FROM_STATEMENT");
-  IElementType FROM_STATEMENT_LIST = new FlowRenderCompositeElementType("FROM_STATEMENT_LIST");
-  IElementType IDENTIFIER_LITERAL = new FlowRenderCompositeElementType("IDENTIFIER_LITERAL");
+  IElementType FIELD_EXPR = new FlowRenderCompositeElementType("FIELD_EXPR");
+  IElementType IDENTIFIER_EXPR = new FlowRenderCompositeElementType("IDENTIFIER_EXPR");
   IElementType IF_STATEMENT = new FlowRenderCompositeElementType("IF_STATEMENT");
+  IElementType IMPORT_STATEMENT = new FlowRenderCompositeElementType("IMPORT_STATEMENT");
   IElementType INCLUDE_STATEMENT = new FlowRenderCompositeElementType("INCLUDE_STATEMENT");
-  IElementType LITERAL = new FlowRenderCompositeElementType("LITERAL");
-  IElementType LITERAL_EXPR = new FlowRenderCompositeElementType("LITERAL_EXPR");
-  IElementType NUMBER_LITERAL = new FlowRenderCompositeElementType("NUMBER_LITERAL");
+  IElementType MULTIPLICATIVE_EXPR = new FlowRenderCompositeElementType("MULTIPLICATIVE_EXPR");
+  IElementType NOT_EXPR = new FlowRenderCompositeElementType("NOT_EXPR");
+  IElementType NUMBER_EXPR = new FlowRenderCompositeElementType("NUMBER_EXPR");
   IElementType OR_EXPR = new FlowRenderCompositeElementType("OR_EXPR");
   IElementType PARENTHESES_EXPR = new FlowRenderCompositeElementType("PARENTHESES_EXPR");
   IElementType PIPE = new FlowRenderCompositeElementType("PIPE");
   IElementType PIPELINE = new FlowRenderCompositeElementType("PIPELINE");
   IElementType PIPELINE_STATEMENT = new FlowRenderCompositeElementType("PIPELINE_STATEMENT");
-  IElementType RANGE_ASSIGN = new FlowRenderCompositeElementType("RANGE_ASSIGN");
   IElementType RANGE_STATEMENT = new FlowRenderCompositeElementType("RANGE_STATEMENT");
-  IElementType SET_STATEMENT = new FlowRenderCompositeElementType("SET_STATEMENT");
   IElementType STATEMENT_LIST = new FlowRenderCompositeElementType("STATEMENT_LIST");
-  IElementType STRING_LITERAL = new FlowRenderCompositeElementType("STRING_LITERAL");
-  IElementType UNSET_STATEMENT = new FlowRenderCompositeElementType("UNSET_STATEMENT");
+  IElementType STRING_EXPR = new FlowRenderCompositeElementType("STRING_EXPR");
+  IElementType TERNARY_EXPR = new FlowRenderCompositeElementType("TERNARY_EXPR");
   IElementType YIELD_STATEMENT = new FlowRenderCompositeElementType("YIELD_STATEMENT");
 
   IElementType ASSIGN = new FlowRenderTokenType("=");
   IElementType BIT_OR = new FlowRenderTokenType("|");
   IElementType BLOCK = new FlowRenderTokenType("block");
+  IElementType COLON = new FlowRenderTokenType(":");
+  IElementType COLONCOMMA = new FlowRenderTokenType(";");
   IElementType COMMA = new FlowRenderTokenType(",");
   IElementType COMMENT = new FlowRenderTokenType("");
   IElementType COND_AND = new FlowRenderTokenType("&&");
   IElementType COND_OR = new FlowRenderTokenType("||");
+  IElementType DIV = new FlowRenderTokenType("/");
   IElementType DOT = new FlowRenderTokenType(".");
   IElementType ELSE = new FlowRenderTokenType("else");
   IElementType END = new FlowRenderTokenType("end");
   IElementType EQ = new FlowRenderTokenType("==");
   IElementType EXTENDS = new FlowRenderTokenType("extends");
-  IElementType FROM = new FlowRenderTokenType("from");
   IElementType GREATER = new FlowRenderTokenType(">");
   IElementType GREATER_OR_EQUAL = new FlowRenderTokenType(">=");
   IElementType IDENT = new FlowRenderTokenType("IDENT");
   IElementType IF = new FlowRenderTokenType("if");
+  IElementType IMPORT = new FlowRenderTokenType("import");
   IElementType INCLUDE = new FlowRenderTokenType("include");
   IElementType LBRACE = new FlowRenderTokenType("{");
-  IElementType LDOUBLE_BRACE = new FlowRenderTokenType("{%");
+  IElementType LDOUBLE_BRACE = new FlowRenderTokenType("{{");
   IElementType LESS = new FlowRenderTokenType("<");
   IElementType LESS_OR_EQUAL = new FlowRenderTokenType("<=");
   IElementType LPAREN = new FlowRenderTokenType("(");
+  IElementType MINUS = new FlowRenderTokenType("-");
+  IElementType MOD = new FlowRenderTokenType("%");
+  IElementType MUL = new FlowRenderTokenType("*");
   IElementType NOT = new FlowRenderTokenType("!");
   IElementType NOT_EQ = new FlowRenderTokenType("!=");
   IElementType NUMBER = new FlowRenderTokenType("NUMBER");
+  IElementType PLUS = new FlowRenderTokenType("+");
   IElementType RANGE = new FlowRenderTokenType("range");
   IElementType RAW_STRING = new FlowRenderTokenType("RAW_STRING");
   IElementType RBRACE = new FlowRenderTokenType("}");
-  IElementType RDOUBLE_BRACE = new FlowRenderTokenType("%}");
+  IElementType RDOUBLE_BRACE = new FlowRenderTokenType("}}");
   IElementType RPAREN = new FlowRenderTokenType(")");
-  IElementType SET = new FlowRenderTokenType("set");
+  IElementType SCOPE_ASSIGN = new FlowRenderTokenType(":=");
   IElementType STRING = new FlowRenderTokenType("STRING");
+  IElementType TERNARY = new FlowRenderTokenType("?");
   IElementType TEXT = new FlowRenderTokenType("TEXT");
-  IElementType UNSET = new FlowRenderTokenType("unset");
   IElementType YIELD = new FlowRenderTokenType("yield");
 
   class Factory {
     public static PsiElement createElement(ASTNode node) {
       IElementType type = node.getElementType();
-       if (type == AND_EXPR) {
+       if (type == ADDITIVE_EXPR) {
+        return new FlowRenderAdditiveExprImpl(node);
+      }
+      else if (type == AND_EXPR) {
         return new FlowRenderAndExprImpl(node);
       }
       else if (type == BLOCK_STATEMENT) {
         return new FlowRenderBlockStatementImpl(node);
+      }
+      else if (type == CALL_EXPR) {
+        return new FlowRenderCallExprImpl(node);
       }
       else if (type == CONDITIONAL_EXPR) {
         return new FlowRenderConditionalExprImpl(node);
@@ -111,29 +124,29 @@ public interface FlowRenderTypes {
       else if (type == FIELD_CHAIN_EXPR) {
         return new FlowRenderFieldChainExprImpl(node);
       }
-      else if (type == FROM_STATEMENT) {
-        return new FlowRenderFromStatementImpl(node);
+      else if (type == FIELD_EXPR) {
+        return new FlowRenderFieldExprImpl(node);
       }
-      else if (type == FROM_STATEMENT_LIST) {
-        return new FlowRenderFromStatementListImpl(node);
-      }
-      else if (type == IDENTIFIER_LITERAL) {
-        return new FlowRenderIdentifierLiteralImpl(node);
+      else if (type == IDENTIFIER_EXPR) {
+        return new FlowRenderIdentifierExprImpl(node);
       }
       else if (type == IF_STATEMENT) {
         return new FlowRenderIfStatementImpl(node);
       }
+      else if (type == IMPORT_STATEMENT) {
+        return new FlowRenderImportStatementImpl(node);
+      }
       else if (type == INCLUDE_STATEMENT) {
         return new FlowRenderIncludeStatementImpl(node);
       }
-      else if (type == LITERAL) {
-        return new FlowRenderLiteralImpl(node);
+      else if (type == MULTIPLICATIVE_EXPR) {
+        return new FlowRenderMultiplicativeExprImpl(node);
       }
-      else if (type == LITERAL_EXPR) {
-        return new FlowRenderLiteralExprImpl(node);
+      else if (type == NOT_EXPR) {
+        return new FlowRenderNotExprImpl(node);
       }
-      else if (type == NUMBER_LITERAL) {
-        return new FlowRenderNumberLiteralImpl(node);
+      else if (type == NUMBER_EXPR) {
+        return new FlowRenderNumberExprImpl(node);
       }
       else if (type == OR_EXPR) {
         return new FlowRenderOrExprImpl(node);
@@ -150,23 +163,17 @@ public interface FlowRenderTypes {
       else if (type == PIPELINE_STATEMENT) {
         return new FlowRenderPipelineStatementImpl(node);
       }
-      else if (type == RANGE_ASSIGN) {
-        return new FlowRenderRangeAssignImpl(node);
-      }
       else if (type == RANGE_STATEMENT) {
         return new FlowRenderRangeStatementImpl(node);
-      }
-      else if (type == SET_STATEMENT) {
-        return new FlowRenderSetStatementImpl(node);
       }
       else if (type == STATEMENT_LIST) {
         return new FlowRenderStatementListImpl(node);
       }
-      else if (type == STRING_LITERAL) {
-        return new FlowRenderStringLiteralImpl(node);
+      else if (type == STRING_EXPR) {
+        return new FlowRenderStringExprImpl(node);
       }
-      else if (type == UNSET_STATEMENT) {
-        return new FlowRenderUnsetStatementImpl(node);
+      else if (type == TERNARY_EXPR) {
+        return new FlowRenderTernaryExprImpl(node);
       }
       else if (type == YIELD_STATEMENT) {
         return new FlowRenderYieldStatementImpl(node);

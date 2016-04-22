@@ -8,24 +8,27 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static io.github.jhsx.flow.render.FlowRenderTypes.*;
-import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import io.github.jhsx.flow.render.psi.*;
 
-public class FlowRenderFromStatementListImpl extends ASTWrapperPsiElement implements FlowRenderFromStatementList {
+public class FlowRenderTernaryExprImpl extends FlowRenderExpressionImpl implements FlowRenderTernaryExpr {
 
-  public FlowRenderFromStatementListImpl(ASTNode node) {
+  public FlowRenderTernaryExprImpl(ASTNode node) {
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitTernaryExpr(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitFromStatementList(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 
   @Override
   @NotNull
-  public List<FlowRenderFromStatement> getFromStatementList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderFromStatement.class);
+  public List<FlowRenderExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderExpression.class);
   }
 
 }

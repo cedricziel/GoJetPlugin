@@ -16,8 +16,12 @@ public class FlowRenderBlockStatementImpl extends FlowRenderStatementImpl implem
     super(node);
   }
 
+  public void accept(@NotNull FlowRenderVisitor visitor) {
+    visitor.visitBlockStatement(this);
+  }
+
   public void accept(@NotNull PsiElementVisitor visitor) {
-    if (visitor instanceof FlowRenderVisitor) ((FlowRenderVisitor)visitor).visitBlockStatement(this);
+    if (visitor instanceof FlowRenderVisitor) accept((FlowRenderVisitor)visitor);
     else super.accept(visitor);
   }
 
@@ -28,15 +32,15 @@ public class FlowRenderBlockStatementImpl extends FlowRenderStatementImpl implem
   }
 
   @Override
-  @Nullable
-  public FlowRenderIdentifierLiteral getIdentifierLiteral() {
-    return findChildByClass(FlowRenderIdentifierLiteral.class);
+  @NotNull
+  public List<FlowRenderExpression> getExpressionList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderExpression.class);
   }
 
   @Override
-  @Nullable
-  public FlowRenderPipeline getPipeline() {
-    return findChildByClass(FlowRenderPipeline.class);
+  @NotNull
+  public List<FlowRenderPipeline> getPipelineList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, FlowRenderPipeline.class);
   }
 
   @Override
