@@ -16,23 +16,20 @@
  *
  */
 
-package io.github.jhsx.jet.lang.templates;
+package io.github.jhsx.jet.ide.templates;
 
-import com.intellij.codeInsight.template.TemplateContextType;
-import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiFile;
-import io.github.jhsx.jet.JetLanguage;
-import org.jetbrains.annotations.NotNull;
+import com.intellij.codeInsight.template.impl.DefaultLiveTemplatesProvider;
+import org.jetbrains.annotations.Nullable;
 
-public class JetContext extends TemplateContextType {
-    protected JetContext() {
-        super("JET", "jet");
+public class JetProvider implements DefaultLiveTemplatesProvider {
+    @Override
+    public String[] getDefaultLiveTemplateFiles() {
+        return new String[]{"liveTemplates/jet_actions"};
     }
 
+    @Nullable
     @Override
-    public boolean isInContext(@NotNull PsiFile psiFile, int i) {
-        PsiElement elementAt = psiFile.findElementAt(i);
-        assert elementAt != null;
-        return psiFile.getLanguage().is(JetLanguage.INSTANCE) && !elementAt.getLanguage().is(JetLanguage.INSTANCE);
+    public String[] getHiddenLiveTemplateFiles() {
+        return new String[0];
     }
 }

@@ -54,14 +54,14 @@ This intellij plugin adds support for the Jet template engine http://github.com/
                                       implementationClass="io.github.jhsx.jet.lang.file.JetFileViewProviderFactory"/>
         <lang.parserDefinition language="JetTemplateLanguage"
                                implementationClass="io.github.jhsx.jet.JetParserDefinition"/>
-        <editorHighlighterProvider filetype="jet"
+        <editorHighlighterProvider filetype="Jet"
                                    implementationClass="io.github.jhsx.jet.ide.highlighting.JetEditorHighlighterFactory"/>
         <lang.syntaxHighlighterFactory language="JetTemplateLanguage"
                                        implementationClass="io.github.jhsx.jet.ide.highlighting.JetSyntaxHighlighterFactory"/>
         <fileTypeFactory implementation="io.github.jhsx.jet.lang.file.JetFileTypeFactory"/>
         <!-- /JET Language -->
-        <defaultLiveTemplatesProvider implementation="io.github.jhsx.jet.lang.templates.JetProvider"/>
-        <liveTemplateContext implementation="io.github.jhsx.jet.lang.templates.JetContext"/>
+        <defaultLiveTemplatesProvider implementation="io.github.jhsx.jet.ide.templates.JetProvider"/>
+        <liveTemplateContext implementation="io.github.jhsx.jet.ide.templates.JetContext"/>
 
         <lang.smartEnterProcessor language="JetTemplateLanguage"
                                   implementationClass="io.github.jhsx.jet.ide.JetHandler"/>

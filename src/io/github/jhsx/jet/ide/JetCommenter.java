@@ -20,9 +20,6 @@ package io.github.jhsx.jet.ide;
 
 import org.jetbrains.annotations.Nullable;
 
-/**
- * Created by josesantos on 04/03/16.
- */
 public class JetCommenter implements com.intellij.lang.Commenter {
     @Nullable
     @Override

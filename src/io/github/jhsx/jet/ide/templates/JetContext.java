@@ -16,23 +16,24 @@
  *
  */
 
-package io.github.jhsx.jet.ide;
+package io.github.jhsx.jet.ide.templates;
 
-import com.intellij.codeInsight.editorActions.smartEnter.SmartEnterProcessor;
-import com.intellij.openapi.editor.Editor;
-import com.intellij.openapi.project.Project;
+import com.intellij.codeInsight.template.TemplateContextType;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
-import io.github.jhsx.jet.lang.JetTypes;
+import io.github.jhsx.jet.JetLanguage;
 import org.jetbrains.annotations.NotNull;
 
-public class JetHandler extends SmartEnterProcessor {
+public class JetContext extends TemplateContextType {
+    protected JetContext() {
+        super("JET", "jet");
+    }
+
     @Override
-    public boolean process(@NotNull Project project, @NotNull Editor editor, @NotNull PsiFile psiFile) {
-        PsiElement statementAtCaret = getStatementAtCaret(editor, psiFile);
-        if (statementAtCaret != null && statementAtCaret.getNode().getElementType() == JetTypes.LDOUBLE_BRACE) {
-            editor.getDocument().insertString(statementAtCaret.getTextRange().getEndOffset(), "}}");
-            return false;
+    public boolean isInContext(@NotNull PsiFile psiFile, int i) {
+        PsiElement elementAt = psiFile.findElementAt(i);
+        if (elementAt != null) {
+            return psiFile.getLanguage().is(JetLanguage.INSTANCE) && !elementAt.getLanguage().is(JetLanguage.INSTANCE);
         }
         return false;
     }
