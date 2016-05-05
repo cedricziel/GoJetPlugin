@@ -17,7 +17,7 @@
   -->
 
 <idea-plugin version="2">
-    <id>io.github.jhsx.GoJetPlugin</id>
+    <id>io.github.jhsx.ideaJet</id>
     <name>Jet Template Language Support</name>
     <version>0.0</version>
     <vendor url="https://github.com/jhsx"/>

@@ -2,110 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2a0fde-b2c4-4f0f-a3d6-4eff387c468b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/Jet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/templates/JetContext.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/FlowRenderTypes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/lexer/_FlowRenderLexer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/parser/FlowRenderParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderAdditiveExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderAndExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderBlockStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderCallExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderConditionalExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderElseIfStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderElseStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderEndStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderExtendsStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderFieldChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderFieldChainExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderFieldExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderIdentifierExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderIfStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderImportStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderIncludeStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderMultiplicativeExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderNotExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderNumberExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderOrExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderParenthesesExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderPipe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderPipeline.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderPipelineStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderRangeStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderStatementList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderStringExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderTernaryExpr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/FlowRenderYieldStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderAdditiveExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderAndExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderBlockStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderCallExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderConditionalExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderElseIfStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderElseStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderEndStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderExpressionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderExtendsStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderFieldChainExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderFieldChainImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderFieldExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderIdentifierExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderIfStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderImportStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderIncludeStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderMultiplicativeExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderNotExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderNumberExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderOrExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderParenthesesExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderPipeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderPipelineImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderPipelineStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderRangeStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderStatementListImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderStringExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderTernaryExprImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderYieldStatementImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/flow/render/lexer/gen_lexer.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/flow/render/parser/parser.bnf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/liveTemplates/flowRender.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/templates/Context.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/liveTemplates/flowRender.xml" afterPath="$PROJECT_DIR$/resources/liveTemplates/jet_actions.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/FlowRenderLanguage.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/JetLanguage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/FlowRenderParserDefinition.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/JetParserDefinition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/FlowRenderTokens.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileElementType.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileElementType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileType.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileTypeFactory.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileTypeFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileViewProvider.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileViewProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileViewProviderFactory.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileViewProviderFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/highlighting/FlowRenderEditorHighlighterFactory.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetEditorHighlighterFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/highlighting/FlowRenderLayeredSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetLayeredSyntaxHighlighter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/highlighting/FlowRenderSyntaxHighlighter.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetSyntaxHighlighter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/highlighting/FlowRenderSyntaxHighlighterFactory.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetSyntaxHighlighterFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lang/BraceMatcher.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetBraceMatcher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lang/Commenter.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetCommenter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lang/FlowEnterHandler.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lang/FlowSubstitutor.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetSubstitutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lexer/FlowRenderLexer.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/JetLexer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lexer/flowrender.flex" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/lexer/gen_lexer.sh" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/gen_lexer.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/parser/FlowRenderParserUtil.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/JetParserUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/parser/parser.bnf" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/psi/FlowRenderCompositeElementType.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetTokenType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/psi/FlowRenderFile.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/psi/FlowRenderTokenType.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetCompositeElementType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/stub/FlowRenderFileStub.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/stub/JetFileStub.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/flow/render/templates/Provider.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/templates/JetProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/IdeaFlow.iml" afterPath="$PROJECT_DIR$/GoJetPlugin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/idea.properties" afterPath="$PROJECT_DIR$/idea.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/IdeaFlow/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
     </list>
     <ignored path="IdeaFlow.iws" />
@@ -128,11 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoJetPlugin.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GoJetPlugin.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -163,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/JetFileType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileTypeFactory.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/JetFileTypeFactory.java" />
@@ -210,10 +120,11 @@
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/JetParserDefinition.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/templates/JetContext.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileViewProvider.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetFile.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -251,31 +162,17 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemId" value="GoJetPlugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemId" value="GoJetPlugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="IdeaFlow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IdeaFlow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IdeaFlow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,8 +184,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="copyright" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -302,7 +199,7 @@
   </component>
   <component name="RunManager" selected="Plugin.Plugin">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="IdeaFlow" />
+      <module name="GoJetPlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <method />
@@ -573,7 +470,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="IdeaFlow" />
+      <module name="GoJetPlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <method />
@@ -657,14 +554,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/codeInsight/template/impl/TemplateState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="503" column="0" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderIdentifierLiteralImpl.java" />
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/lexer/_FlowRenderLexer.java" />
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderPrimaryGroupImpl.java" />
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/parser/JetParser.java">
@@ -757,13 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/liveTemplates/jet_actions.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -956,14 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1005,10 +879,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/liveTemplates/jet_actions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoJetPlugin.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1078,7 +984,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>IdeaFlow</last-edited>
+          <last-edited>GoJetPlugin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
