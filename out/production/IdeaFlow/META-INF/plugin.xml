@@ -1,23 +1,25 @@
 <!--
-  ~ Copyright 2013-2015 José Santos
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~ http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
+  ~ /*
+  ~  * Copyright 2016 José Santos
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
   -->
 
 <idea-plugin version="2">
-    <id>io.github.jhsx.flow</id>
-    <name>Flow Framework Support</name>
-    <version>1.0</version>
+    <id>io.github.jhsx.ideaJet</id>
+    <name>Jet Template Language Support</name>
+    <version>0.0</version>
     <vendor url="https://github.com/jhsx"/>
     <category>Custom Languages</category>
 
@@ -29,35 +31,33 @@
         <![CDATA[
     ]]>
     </change-notes>
-
     <idea-version since-build="143.379"/>
     <depends>com.intellij.modules.lang</depends>
-
-
     <module-components>
     </module-components>
 
     <extensions defaultExtensionNs="com.intellij">
-        <lang.substitutor language="HTML" implementationClass="io.github.jhsx.flow.render.lang.FlowSubstitutor" />
-         <!-- FlowRender -->
-        <lang.fileViewProviderFactory language="flowRender"
-                                      implementationClass="io.github.jhsx.flow.render.file.FlowRenderFileViewProviderFactory"/>
-        <lang.parserDefinition language="flowRender"
-                               implementationClass="io.github.jhsx.flow.render.FlowRenderParserDefinition"/>
-        <editorHighlighterProvider filetype="flowRender"
-                                   implementationClass="io.github.jhsx.flow.render.highlighting.FlowRenderEditorHighlighterFactory"/>
-        <lang.syntaxHighlighterFactory language="flowRender"
-                                       implementationClass="io.github.jhsx.flow.render.highlighting.FlowRenderSyntaxHighlighterFactory"/>
-        <fileTypeFactory implementation="io.github.jhsx.flow.render.file.FlowRenderFileTypeFactory"/>
-        <!-- /FlowRender -->
-        <defaultLiveTemplatesProvider implementation="io.github.jhsx.flow.render.templates.Provider"/>
-        <liveTemplateContext implementation="io.github.jhsx.flow.render.templates.Context"/>
+        <lang.substitutor language="HTML" implementationClass="io.github.jhsx.jet.ide.JetSubstitutor"/>
 
-        <lang.smartEnterProcessor language="flowRender"
-                                  implementationClass="io.github.jhsx.flow.render.lang.FlowEnterHandler"/>
+        <!-- JET Language -->
+        <lang.fileViewProviderFactory language="JetTemplateLanguage"
+                                      implementationClass="io.github.jhsx.jet.lang.file.JetFileViewProviderFactory"/>
+        <lang.parserDefinition language="JetTemplateLanguage"
+                               implementationClass="io.github.jhsx.jet.JetParserDefinition"/>
+        <editorHighlighterProvider filetype="jet"
+                                   implementationClass="io.github.jhsx.jet.ide.highlighting.JetEditorHighlighterFactory"/>
+        <lang.syntaxHighlighterFactory language="JetTemplateLanguage"
+                                       implementationClass="io.github.jhsx.jet.ide.highlighting.JetSyntaxHighlighterFactory"/>
+        <fileTypeFactory implementation="io.github.jhsx.jet.lang.file.JetFileTypeFactory"/>
+        <!-- /JET Language -->
+        <defaultLiveTemplatesProvider implementation="io.github.jhsx.jet.lang.templates.JetProvider"/>
+        <liveTemplateContext implementation="io.github.jhsx.jet.lang.templates.JetContext"/>
 
-        <lang.braceMatcher language="flowRender" implementationClass="io.github.jhsx.flow.render.lang.BraceMatcher"/>
-        <lang.commenter language="flowRender" implementationClass="io.github.jhsx.flow.render.lang.Commenter"/>
+        <lang.smartEnterProcessor language="JetTemplateLanguage"
+                                  implementationClass="io.github.jhsx.jet.ide.JetHandler"/>
+
+        <lang.braceMatcher language="JetTemplateLanguage" implementationClass="io.github.jhsx.jet.ide.JetBraceMatcher"/>
+        <lang.commenter language="JetTemplateLanguage" implementationClass="io.github.jhsx.jet.ide.JetCommenter"/>
     </extensions>
 
     <actions>

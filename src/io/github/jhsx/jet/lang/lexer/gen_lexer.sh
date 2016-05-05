@@ -1,0 +1,1 @@
+~/src/intellij-community/tools/lexer/jflex-1.4/bin/jflex --skel ~/src/intellij-community/tools/lexer/idea-flex.skeleton --charat --nobak jet.flex -d ../../../../../../../gen/io/github/jhsx/jet/lang/lexer/
