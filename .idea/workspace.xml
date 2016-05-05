@@ -2,8 +2,275 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2a0fde-b2c4-4f0f-a3d6-4eff387c468b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/JetTypes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/lexer/_JetLexer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/parser/JetParser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetAdditiveExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetAndExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetBlockStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetCallExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetConditionalExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetElseIfStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetElseStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetEndStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetExtendsStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetFieldChain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetFieldChainExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetFieldExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetIdentifierExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetIfStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetImportStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetIncludeStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetMultiplicativeExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetNotExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetNumberExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetOrExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetParenthesesExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetPipe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetPipeline.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetPipelineStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetRangeStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetStatementList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetStringExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetTernaryExpr.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetVisitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetYieldStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetAdditiveExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetAndExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetBlockStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetCallExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetConditionalExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetElseIfStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetElseStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetEndStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetExpressionImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetExtendsStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetFieldChainExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetFieldChainImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetFieldExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetIdentifierExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetIfStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetImportStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetIncludeStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetMultiplicativeExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetNotExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetNumberExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetOrExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetParenthesesExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetPipeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetPipelineImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetPipelineStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetRangeStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetStatementListImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetStringExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetTernaryExprImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/impl/JetYieldStatementImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/META-INF/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/JetLanguage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/JetParserDefinition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/JetTokens.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/JetBraceMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/JetCommenter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/JetHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/JetSubstitutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/highlighting/JetEditorHighlighterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/highlighting/JetLayeredSyntaxHighlighter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/highlighting/JetSyntaxHighlighter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/ide/highlighting/JetSyntaxHighlighterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/JetTypes$Factory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/JetTypes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/file/JetFileElementType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/file/JetFileType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/file/JetFileTypeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/file/JetFileViewProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/file/JetFileViewProviderFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/lexer/JetLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/lexer/_JetLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/lexer/gen_lexer.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/parser/JetParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/parser/JetParserUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/parser/parser.bnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetAdditiveExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetAndExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetBlockStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetCallExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetCompositeElementType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetConditionalExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetElseIfStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetElseStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetEndStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetExtendsStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetFieldChain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetFieldChainExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetFieldExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetIdentifierExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetIfStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetImportStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetIncludeStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetMultiplicativeExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetNotExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetNumberExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetOrExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetParenthesesExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetPipe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetPipeline.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetPipelineStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetRangeStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetStatementList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetStringExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetTernaryExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetTokenType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/JetYieldStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetAdditiveExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetAndExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetBlockStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetCallExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetConditionalExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetElseIfStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetElseStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetEndStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetExpressionImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetExtendsStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetFieldChainExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetFieldChainImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetFieldExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetIdentifierExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetIfStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetImportStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetIncludeStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetMultiplicativeExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetNotExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetNumberExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetOrExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetParenthesesExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetPipeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetPipelineImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetPipelineStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetRangeStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetStatementListImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetStringExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetTernaryExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/psi/impl/JetYieldStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/stub/JetFileStub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/templates/JetContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/io/github/jhsx/jet/lang/templates/JetProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaFlow/liveTemplates/jet_actions.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/META-INF/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/JetLanguage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/JetParserDefinition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/JetTokens.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/JetBraceMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/JetCommenter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/JetHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/JetSubstitutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/highlighting/JetEditorHighlighterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/highlighting/JetLayeredSyntaxHighlighter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/highlighting/JetSyntaxHighlighter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/ide/highlighting/JetSyntaxHighlighterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/JetTypes$Factory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/JetTypes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/file/JetFileElementType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/file/JetFileType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/file/JetFileTypeFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/file/JetFileViewProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/file/JetFileViewProviderFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/lexer/JetLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/lexer/_JetLexer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/lexer/gen_lexer.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/parser/JetParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/parser/JetParserUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/parser/parser.bnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetAdditiveExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetAndExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetBlockStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetCallExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetCompositeElementType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetConditionalExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetElseIfStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetElseStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetEndStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetExpression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetExtendsStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetFieldChain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetFieldChainExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetFieldExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetIdentifierExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetIfStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetImportStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetIncludeStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetMultiplicativeExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetNotExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetNumberExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetOrExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetParenthesesExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetPipe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetPipeline.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetPipelineStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetRangeStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetStatementList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetStringExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetTernaryExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetTokenType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetVisitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/JetYieldStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetAdditiveExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetAndExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetBlockStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetCallExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetConditionalExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetElseIfStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetElseStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetEndStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetExpressionImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetExtendsStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetFieldChainExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetFieldChainImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetFieldExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetIdentifierExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetIfStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetImportStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetIncludeStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetMultiplicativeExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetNotExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetNumberExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetOrExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetParenthesesExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetPipeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetPipelineImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetPipelineStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetRangeStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetStatementListImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetStringExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetTernaryExprImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/psi/impl/JetYieldStatementImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/stub/JetFileStub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/templates/JetContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/io/github/jhsx/jet/lang/templates/JetProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaJet/liveTemplates/jet_actions.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoJetPlugin.jar" afterPath="$PROJECT_DIR$/GoJetPlugin.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/JetTokens.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/JetTokens.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes$Factory.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes$Factory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/lexer/_JetLexer.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/lexer/_JetLexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/JetParser.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/JetParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/psi/JetVisitor.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/psi/JetVisitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/parser.bnf" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/parser.bnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
     </list>
     <ignored path="IdeaFlow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,31 +292,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="parser.bnf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="370">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#2047#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoJetPlugin.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GoJetPlugin.iml">
+      <file leaf-file-name="jet.flex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="idea.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <state relative-caret-position="-820">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,7 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/JetFileType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileTypeFactory.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/JetFileTypeFactory.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/file/FlowRenderFileViewProvider.java" />
@@ -104,7 +372,6 @@
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/FlowRenderTokens.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/FlowRenderParserDefinition.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/flow/render/parser/parser.bnf" />
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/FlowRenderCompositeElementType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetCompositeElementType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/FlowRenderTokenType.java" />
@@ -122,15 +389,17 @@
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetBraceMatcher.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/JetLexer.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/JetLanguage.java" />
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/JetParserDefinition.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/templates/JetContext.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileViewProvider.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileType.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetFile.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" />
+        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java" />
+        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -179,6 +448,160 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJetPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jhsx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJetPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jhsx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJetPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jhsx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lexer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJetPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJetPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IdeaFlow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jhsx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -503,7 +926,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -514,7 +937,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23201175" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2907489" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2907489" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -562,13 +985,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/lexer/_FlowRenderLexer.java" />
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderPrimaryGroupImpl.java" />
-    <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/parser/JetParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13845">
-          <caret line="931" column="0" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/psi/impl/FlowRenderPrimaryGroupExprImpl.java" />
     <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/flow/render/FlowRenderTypes.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/codeInsight/template/TemplateContextType.class">
@@ -690,13 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetCompositeElementType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -718,13 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1237">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/gen_lexer.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -743,6 +1145,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2047">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -757,6 +1160,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -778,13 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/JetLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -822,17 +1221,6 @@
             <element signature="e#1210#1211#0" expanded="true" />
             <element signature="e#1378#1379#0" expanded="true" />
             <element signature="e#1422#1423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#1224#0" expanded="false" />
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -878,14 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/liveTemplates/jet_actions.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -922,6 +1302,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/parser/JetParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="931" column="0" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/JetLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#1004#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-820">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>

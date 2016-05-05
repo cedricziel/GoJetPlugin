@@ -105,6 +105,7 @@ TEXT = [^{]*
   "include"             { return INCLUDE; }
   "import"              { return IMPORT; }
   "range"               { return RANGE; }
+  "isset"               { return ISSET; }
 
   {IDENT}                                  { return IDENT; }
   {NUM_FLOAT}"i"                           {  return NUMBER; }

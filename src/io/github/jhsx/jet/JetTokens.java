@@ -36,6 +36,7 @@ public interface JetTokens {
             INCLUDE,
             BLOCK,
             EXTENDS,
-            IMPORT
+            IMPORT,
+            ISSET
     );
 }
