@@ -18,11 +18,11 @@
 
 package io.github.jhsx.jet.lang.stub;
 
-import io.github.jhsx.jet.lang.psi.JetFile;
 import com.intellij.psi.stubs.PsiFileStubImpl;
+import io.github.jhsx.jet.lang.psi.JetFile;
 
 public class JetFileStub extends PsiFileStubImpl<JetFile> {
-  public JetFileStub(JetFile file) {
-    super(file);
-  }
+    public JetFileStub(JetFile file) {
+        super(file);
+    }
 }

@@ -18,21 +18,21 @@
 
 package io.github.jhsx.jet.lang.psi;
 
-import io.github.jhsx.jet.JetLanguage;
-import io.github.jhsx.jet.lang.file.JetFileType;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
+import io.github.jhsx.jet.JetLanguage;
+import io.github.jhsx.jet.lang.file.JetFileType;
 import org.jetbrains.annotations.NotNull;
 
 public class JetFile extends PsiFileBase {
-  public JetFile(@NotNull FileViewProvider viewProvider) {
-    super(viewProvider, JetLanguage.INSTANCE);
-  }
+    public JetFile(@NotNull FileViewProvider viewProvider) {
+        super(viewProvider, JetLanguage.INSTANCE);
+    }
 
-  @NotNull
-  @Override
-  public FileType getFileType() {
-    return JetFileType.INSTANCE;
-  }
+    @NotNull
+    @Override
+    public FileType getFileType() {
+        return JetFileType.INSTANCE;
+    }
 }

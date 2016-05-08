@@ -57,7 +57,7 @@ public class JetParser implements PsiParser, LightPsiParser {
       r = FieldChain(b, 0);
     }
     else if (t == FIELD_CHAIN_EXPR) {
-      r = Expression(b, 0, 8);
+      r = Expression(b, 0, 10);
     }
     else if (t == FIELD_EXPR) {
       r = FieldExpr(b, 0);
@@ -73,6 +73,9 @@ public class JetParser implements PsiParser, LightPsiParser {
     }
     else if (t == INCLUDE_STATEMENT) {
       r = IncludeStatement(b, 0);
+    }
+    else if (t == INDEX_EXPR) {
+      r = Expression(b, 0, 6);
     }
     else if (t == ISSET_EXPR) {
       r = IssetExpr(b, 0);
@@ -104,6 +107,9 @@ public class JetParser implements PsiParser, LightPsiParser {
     else if (t == RANGE_STATEMENT) {
       r = RangeStatement(b, 0);
     }
+    else if (t == SLICE_EXPR) {
+      r = Expression(b, 0, 5);
+    }
     else if (t == STATEMENT_LIST) {
       r = StatementList(b, 0);
     }
@@ -111,7 +117,7 @@ public class JetParser implements PsiParser, LightPsiParser {
       r = StringExpr(b, 0);
     }
     else if (t == TERNARY_EXPR) {
-      r = Expression(b, 0, 6);
+      r = Expression(b, 0, 8);
     }
     else if (t == YIELD_STATEMENT) {
       r = YieldStatement(b, 0);
@@ -132,8 +138,9 @@ public class JetParser implements PsiParser, LightPsiParser {
       PIPELINE_STATEMENT, RANGE_STATEMENT, YIELD_STATEMENT),
     create_token_set_(ADDITIVE_EXPR, AND_EXPR, CALL_EXPR, CONDITIONAL_EXPR,
       EXPRESSION, FIELD_CHAIN_EXPR, FIELD_EXPR, IDENTIFIER_EXPR,
-      ISSET_EXPR, MULTIPLICATIVE_EXPR, NOT_EXPR, NUMBER_EXPR,
-      OR_EXPR, PARENTHESES_EXPR, STRING_EXPR, TERNARY_EXPR),
+      INDEX_EXPR, ISSET_EXPR, MULTIPLICATIVE_EXPR, NOT_EXPR,
+      NUMBER_EXPR, OR_EXPR, PARENTHESES_EXPR, SLICE_EXPR,
+      STRING_EXPR, TERNARY_EXPR),
   };
 
   /* ********************************************************** */
@@ -785,7 +792,7 @@ public class JetParser implements PsiParser, LightPsiParser {
     if (!recursion_guard_(b, l, "fieldOrID")) return false;
     boolean r;
     Marker m = enter_section_(b);
-    r = Expression(b, l + 1, 8);
+    r = Expression(b, l + 1, 10);
     if (!r) r = IdentifierExpr(b, l + 1);
     exit_section_(b, m, null, r);
     return r;
@@ -900,11 +907,13 @@ public class JetParser implements PsiParser, LightPsiParser {
   // 3: BINARY(MultiplicativeExpr)
   // 4: BINARY(AdditiveExpr)
   // 5: POSTFIX(CallExpr)
-  // 6: ATOM(NotExpr)
-  // 7: BINARY(TernaryExpr)
-  // 8: ATOM(IssetExpr)
-  // 9: ATOM(FieldExpr) POSTFIX(FieldChainExpr)
-  // 10: ATOM(NumberExpr) ATOM(IdentifierExpr) ATOM(StringExpr) ATOM(ParenthesesExpr)
+  // 6: POSTFIX(SliceExpr)
+  // 7: BINARY(IndexExpr)
+  // 8: ATOM(NotExpr)
+  // 9: BINARY(TernaryExpr)
+  // 10: ATOM(IssetExpr)
+  // 11: ATOM(FieldExpr) POSTFIX(FieldChainExpr)
+  // 12: ATOM(NumberExpr) ATOM(IdentifierExpr) ATOM(StringExpr) ATOM(ParenthesesExpr)
   public static boolean Expression(PsiBuilder b, int l, int g) {
     if (!recursion_guard_(b, l, "Expression")) return false;
     addVariant(b, "<expression>");
@@ -952,11 +961,20 @@ public class JetParser implements PsiParser, LightPsiParser {
         r = true;
         exit_section_(b, l, m, CALL_EXPR, r, true, null);
       }
-      else if (g < 7 && TernaryExpr_0(b, l + 1)) {
-        r = Expression(b, l, 7);
+      else if (g < 6 && SliceExpr_0(b, l + 1)) {
+        r = true;
+        exit_section_(b, l, m, SLICE_EXPR, r, true, null);
+      }
+      else if (g < 7 && consumeTokenSmart(b, LBRACKETS)) {
+        r = report_error_(b, Expression(b, l, 7));
+        r = consumeToken(b, RBRACKETS) && r;
+        exit_section_(b, l, m, INDEX_EXPR, r, true, null);
+      }
+      else if (g < 9 && TernaryExpr_0(b, l + 1)) {
+        r = Expression(b, l, 9);
         exit_section_(b, l, m, TERNARY_EXPR, r, true, null);
       }
-      else if (g < 9 && FieldChain(b, l + 1)) {
+      else if (g < 11 && FieldChain(b, l + 1)) {
         r = true;
         exit_section_(b, l, m, FIELD_CHAIN_EXPR, r, true, null);
       }
@@ -978,6 +996,34 @@ public class JetParser implements PsiParser, LightPsiParser {
     r = r && consumeToken(b, RPAREN);
     exit_section_(b, m, null, r);
     return r;
+  }
+
+  // '[' Expression? ':' Expression? ']'
+  private static boolean SliceExpr_0(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "SliceExpr_0")) return false;
+    boolean r;
+    Marker m = enter_section_(b);
+    r = consumeTokenSmart(b, LBRACKETS);
+    r = r && SliceExpr_0_1(b, l + 1);
+    r = r && consumeToken(b, COLON);
+    r = r && SliceExpr_0_3(b, l + 1);
+    r = r && consumeToken(b, RBRACKETS);
+    exit_section_(b, m, null, r);
+    return r;
+  }
+
+  // Expression?
+  private static boolean SliceExpr_0_1(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "SliceExpr_0_1")) return false;
+    Expression(b, l + 1, -1);
+    return true;
+  }
+
+  // Expression?
+  private static boolean SliceExpr_0_3(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "SliceExpr_0_3")) return false;
+    Expression(b, l + 1, -1);
+    return true;
   }
 
   // '!' Expression

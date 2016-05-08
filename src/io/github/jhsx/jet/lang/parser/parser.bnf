@@ -23,8 +23,8 @@
     COMMENT              =  ''
     LDOUBLE_BRACE        =  '{{'
     RDOUBLE_BRACE        =  '}}'
-    LBRACE               =  '{'
-    RBRACE               =  '}'
+    LBRACKETS            =  '['
+    RBRACKETS            =  ']'
     LPAREN               =  '('
     RPAREN               =  ')'
     EQ                   =  '=='
@@ -84,11 +84,18 @@ Expression ::=        OrExpr
                     | MultiplicativeExpr
                     | AdditiveExpr
                     | CallExpr
+                    | SliceExpr
+                    | IndexExpr
                     | NotExpr
                     | TernaryExpr
                     | IssetExpr
                     | FieldGroup
                     | PrimaryGroup
+
+
+
+SliceExpr ::= Expression '[' Expression? ':' Expression? ']' {pin=1}
+IndexExpr ::= Expression '[' Expression ']' { pin=1}
 
 
 private FieldGroup ::=   FieldExpr   | FieldChainExpr

@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2a0fde-b2c4-4f0f-a3d6-4eff387c468b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/templates/JetContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/templates/JetProvider.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/templates/JetContext.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/templates/JetContext.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/templates/JetProvider.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/templates/JetProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoJetPlugin.jar" afterPath="$PROJECT_DIR$/GoJetPlugin.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/ide/JetCommenter.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/ide/JetCommenter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/ide/JetHandler.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/ide/JetHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes$Factory.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes$Factory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/JetTypes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/lexer/_JetLexer.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/lexer/_JetLexer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/JetParser.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/JetParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/psi/JetVisitor.class" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/psi/JetVisitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetCommenter.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetCommenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/JetTypes.java" afterPath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/JetTypes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/lexer/_JetLexer.java" afterPath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/lexer/_JetLexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/parser/JetParser.java" afterPath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/parser/JetParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetVisitor.java" afterPath="$PROJECT_DIR$/gen/io/github/jhsx/jet/lang/psi/JetVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/parser.bnf" afterPath="$PROJECT_DIR$/out/production/GoJetPlugin/io/github/jhsx/jet/lang/parser/parser.bnf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetEditorHighlighterFactory.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetEditorHighlighterFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/JetLexer.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/JetLexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetCompositeElementType.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetCompositeElementType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetFile.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetTokenType.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetTokenType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/stub/JetFileStub.java" afterPath="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/stub/JetFileStub.java" />
     </list>
     <ignored path="IdeaFlow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,19 +47,21 @@
       <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+            <state relative-caret-position="362">
+              <caret line="66" column="85" selection-start-line="66" selection-start-column="85" selection-end-line="66" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JetLayeredSyntaxHighlighter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/ide/highlighting/JetLayeredSyntaxHighlighter.java">
+      <file leaf-file-name="parser.bnf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="401">
+              <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#2047#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JetFileType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JetFileType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -204,23 +214,23 @@
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileViewProvider.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/psi/JetFile.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/JetTokens.java" />
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
-        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetCommenter.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/templates/JetContext.java" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/templates/JetProvider.java" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/file/JetFileType.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java" />
+        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex" />
+        <option value="$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -247,6 +257,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,7 +375,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="file" />
+              <option name="myItemId" value="lexer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,32 +421,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoJetPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IdeaFlow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="gen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -444,7 +436,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/gopath/src/github.com/CloudyKit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -751,8 +743,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -762,12 +754,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23201175" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23201175" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2907489" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23100936" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29032257" sideWeight="0.49353796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -777,9 +769,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="123" width="1080" height="573" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -968,7 +960,6 @@
         <state relative-caret-position="480">
           <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
           <folding>
-            <element signature="e#0#1190#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1024,20 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/ide/templates/JetContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1063,13 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1152,19 +1122,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1176,6 +1137,40 @@
             <element signature="e#0#3221#0" expanded="true" />
             <element signature="e#1598#1599#0" expanded="true" />
             <element signature="e#1626#1627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/ide/JetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="66" column="85" selection-start-line="66" selection-start-column="85" selection-end-line="66" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/lexer/jet.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/github/jhsx/jet/lang/parser/parser.bnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#2047#0" expanded="true" />
           </folding>
         </state>
       </provider>

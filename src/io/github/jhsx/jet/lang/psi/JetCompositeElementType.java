@@ -18,9 +18,11 @@
 
 package io.github.jhsx.jet.lang.psi;
 
-import io.github.jhsx.jet.JetLanguage;
 import com.intellij.psi.tree.IElementType;
+import io.github.jhsx.jet.JetLanguage;
 
 public class JetCompositeElementType extends IElementType {
-  public JetCompositeElementType(String expr) {super(expr, JetLanguage.INSTANCE);}
+    public JetCompositeElementType(String expr) {
+        super(expr, JetLanguage.INSTANCE);
+    }
 }

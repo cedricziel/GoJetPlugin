@@ -68,6 +68,8 @@ TEXT = [^{]*
 
   "("                   { return LPAREN; }
   ")"                   { return RPAREN; }
+  "["                   { return LBRACKETS;}
+  "]"                   { return RBRACKETS;}
   "=="                  { return EQ; }
   "="                   { return ASSIGN; }
   ":="                   { return SCOPE_ASSIGN; }

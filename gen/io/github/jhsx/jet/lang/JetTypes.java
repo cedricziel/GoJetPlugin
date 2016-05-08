@@ -27,6 +27,7 @@ public interface JetTypes {
   IElementType IF_STATEMENT = new JetCompositeElementType("IF_STATEMENT");
   IElementType IMPORT_STATEMENT = new JetCompositeElementType("IMPORT_STATEMENT");
   IElementType INCLUDE_STATEMENT = new JetCompositeElementType("INCLUDE_STATEMENT");
+  IElementType INDEX_EXPR = new JetCompositeElementType("INDEX_EXPR");
   IElementType ISSET_EXPR = new JetCompositeElementType("ISSET_EXPR");
   IElementType MULTIPLICATIVE_EXPR = new JetCompositeElementType("MULTIPLICATIVE_EXPR");
   IElementType NOT_EXPR = new JetCompositeElementType("NOT_EXPR");
@@ -37,6 +38,7 @@ public interface JetTypes {
   IElementType PIPELINE = new JetCompositeElementType("PIPELINE");
   IElementType PIPELINE_STATEMENT = new JetCompositeElementType("PIPELINE_STATEMENT");
   IElementType RANGE_STATEMENT = new JetCompositeElementType("RANGE_STATEMENT");
+  IElementType SLICE_EXPR = new JetCompositeElementType("SLICE_EXPR");
   IElementType STATEMENT_LIST = new JetCompositeElementType("STATEMENT_LIST");
   IElementType STRING_EXPR = new JetCompositeElementType("STRING_EXPR");
   IElementType TERNARY_EXPR = new JetCompositeElementType("TERNARY_EXPR");
@@ -64,7 +66,7 @@ public interface JetTypes {
   IElementType IMPORT = new JetTokenType("import");
   IElementType INCLUDE = new JetTokenType("include");
   IElementType ISSET = new JetTokenType("isset");
-  IElementType LBRACE = new JetTokenType("{");
+  IElementType LBRACKETS = new JetTokenType("[");
   IElementType LDOUBLE_BRACE = new JetTokenType("{{");
   IElementType LESS = new JetTokenType("<");
   IElementType LESS_OR_EQUAL = new JetTokenType("<=");
@@ -78,7 +80,7 @@ public interface JetTypes {
   IElementType PLUS = new JetTokenType("+");
   IElementType RANGE = new JetTokenType("range");
   IElementType RAW_STRING = new JetTokenType("RAW_STRING");
-  IElementType RBRACE = new JetTokenType("}");
+  IElementType RBRACKETS = new JetTokenType("]");
   IElementType RDOUBLE_BRACE = new JetTokenType("}}");
   IElementType RPAREN = new JetTokenType(")");
   IElementType SCOPE_ASSIGN = new JetTokenType(":=");
@@ -141,6 +143,9 @@ public interface JetTypes {
       else if (type == INCLUDE_STATEMENT) {
         return new JetIncludeStatementImpl(node);
       }
+      else if (type == INDEX_EXPR) {
+        return new JetIndexExprImpl(node);
+      }
       else if (type == ISSET_EXPR) {
         return new JetIssetExprImpl(node);
       }
@@ -170,6 +175,9 @@ public interface JetTypes {
       }
       else if (type == RANGE_STATEMENT) {
         return new JetRangeStatementImpl(node);
+      }
+      else if (type == SLICE_EXPR) {
+        return new JetSliceExprImpl(node);
       }
       else if (type == STATEMENT_LIST) {
         return new JetStatementListImpl(node);

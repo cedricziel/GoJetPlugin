@@ -28,11 +28,11 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class JetEditorHighlighterFactory implements EditorHighlighterProvider {
-  @Override
-  public EditorHighlighter getEditorHighlighter(@Nullable Project project,
-                                                @NotNull FileType type,
-                                                @Nullable VirtualFile file,
-                                                @NotNull EditorColorsScheme scheme) {
-    return new JetLayeredSyntaxHighlighter(project, scheme, type, file);
-  }
+    @Override
+    public EditorHighlighter getEditorHighlighter(@Nullable Project project,
+                                                  @NotNull FileType type,
+                                                  @Nullable VirtualFile file,
+                                                  @NotNull EditorColorsScheme scheme) {
+        return new JetLayeredSyntaxHighlighter(project, scheme, type, file);
+    }
 }

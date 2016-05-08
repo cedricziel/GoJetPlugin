@@ -24,7 +24,7 @@ import com.intellij.psi.tree.TokenSet;
 import io.github.jhsx.jet.lang.JetTypes;
 
 public class JetLexer extends MergingLexerAdapter {
-  public JetLexer() {
-    super(new FlexAdapter(new _JetLexer()), TokenSet.create(JetTypes.COMMENT));
-  }
+    public JetLexer() {
+        super(new FlexAdapter(new _JetLexer()), TokenSet.create(JetTypes.COMMENT));
+    }
 }

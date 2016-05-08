@@ -18,9 +18,11 @@
 
 package io.github.jhsx.jet.lang.psi;
 
-import io.github.jhsx.jet.JetLanguage;
 import com.intellij.psi.tree.IElementType;
+import io.github.jhsx.jet.JetLanguage;
 
 public class JetTokenType extends IElementType {
-  public JetTokenType(String s) {super(s, JetLanguage.INSTANCE);}
+    public JetTokenType(String s) {
+        super(s, JetLanguage.INSTANCE);
+    }
 }

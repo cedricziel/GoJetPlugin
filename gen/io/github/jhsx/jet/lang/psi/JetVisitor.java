@@ -75,6 +75,10 @@ public class JetVisitor extends PsiElementVisitor {
     visitStatement(o);
   }
 
+  public void visitIndexExpr(@NotNull JetIndexExpr o) {
+    visitExpression(o);
+  }
+
   public void visitIssetExpr(@NotNull JetIssetExpr o) {
     visitExpression(o);
   }
@@ -113,6 +117,10 @@ public class JetVisitor extends PsiElementVisitor {
 
   public void visitRangeStatement(@NotNull JetRangeStatement o) {
     visitStatement(o);
+  }
+
+  public void visitSliceExpr(@NotNull JetSliceExpr o) {
+    visitExpression(o);
   }
 
   public void visitStatement(@NotNull JetStatement o) {
