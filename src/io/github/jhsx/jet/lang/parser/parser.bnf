@@ -58,7 +58,7 @@
     EXTENDS              = 'extends'
     INCLUDE              = 'include'
     IMPORT               = 'import'
-    ISSET                = 'isset'
+    CONTENT              = 'content'
   ]
 
    pin("(.)+Statement$") = 2
@@ -69,7 +69,7 @@ File ::= ExtendsStatement? ImportStatement*  StatementList
 ExtendsStatement ::= '{{' 'extends' StringExpr '}}'
 ImportStatement  ::= '{{' 'import' StringExpr '}}'
 
-StatementList    ::= ( TEXT+ | IncludeStatement | IfStatement | BlockStatement | RangeStatement | YieldStatement | PipelineStatement )*
+StatementList    ::= ( TEXT+ | IncludeStatement | IfStatement | BlockStatement | RangeStatement | YieldContentStatement | YieldStatement | PipelineStatement )*
 
 fake Statement ::=
 
@@ -137,9 +137,19 @@ EndStatement      ::= '{{' 'end' '}}'
 RangeStatement    ::= '{{' 'range' (fieldOrID (',' fieldOrID)? assign_op)? Pipeline '}}' StatementList (EndStatement|ElseStatement)
 private fieldOrID ::= FieldChainExpr|IdentifierExpr
 
-
 PipelineStatement ::= '{{' (set_declaration ';')? Pipeline '}}' { pin=3}
 IncludeStatement  ::= '{{' 'include' StringExpr  (set_declaration ';')? Pipeline? '}}'
-BlockStatement    ::= '{{' 'block' IdentifierExpr  (set_declaration ';')? Pipeline? '}}' StatementList EndStatement
-YieldStatement    ::= '{{' 'yield' IdentifierExpr (set_declaration ';')? Pipeline? '}}'
+
+BlockContentStatement ::= '{{' 'content' '}}' StatementList EndStatement
+BlockParameterList ::= '(' (BlockParameter (',' BlockParameter)*)? ')'
+BlockParameter ::= IdentifierExpr ( '=' Expression )
+BlockStatement    ::= '{{' 'block' IdentifierExpr BlockParameterList Pipeline? '}}' StatementList ( EndStatement | BlockContentStatement)
+
+
+YieldParameterList ::= '(' (YieldParameter (',' YieldParameter)*)? ')'
+YieldParameter ::= BlockParameter || Expression
+
+
+YieldStatement           ::=     '{{' 'yield' IdentifierExpr YieldParameterList Pipeline? ('}}' | 'content' '}}' StatementList EndStatement )
+YieldContentStatement    ::=     '{{' 'yield' 'content' Pipeline? '}}' { pin=3 }
 

@@ -10,14 +10,14 @@ import com.intellij.psi.util.PsiTreeUtil;
 import static io.github.jhsx.jet.lang.JetTypes.*;
 import io.github.jhsx.jet.lang.psi.*;
 
-public class JetBlockStatementImpl extends JetStatementImpl implements JetBlockStatement {
+public class JetYieldContentStatementImpl extends JetStatementImpl implements JetYieldContentStatement {
 
-  public JetBlockStatementImpl(ASTNode node) {
+  public JetYieldContentStatementImpl(ASTNode node) {
     super(node);
   }
 
   public void accept(@NotNull JetVisitor visitor) {
-    visitor.visitBlockStatement(this);
+    visitor.visitYieldContentStatement(this);
   }
 
   public void accept(@NotNull PsiElementVisitor visitor) {
@@ -27,32 +27,8 @@ public class JetBlockStatementImpl extends JetStatementImpl implements JetBlockS
 
   @Override
   @Nullable
-  public JetBlockParameterList getBlockParameterList() {
-    return findChildByClass(JetBlockParameterList.class);
-  }
-
-  @Override
-  @Nullable
-  public JetIdentifierExpr getIdentifierExpr() {
-    return findChildByClass(JetIdentifierExpr.class);
-  }
-
-  @Override
-  @Nullable
   public JetPipeline getPipeline() {
     return findChildByClass(JetPipeline.class);
-  }
-
-  @Override
-  @Nullable
-  public JetStatement getStatement() {
-    return findChildByClass(JetStatement.class);
-  }
-
-  @Override
-  @Nullable
-  public JetStatementList getStatementList() {
-    return findChildByClass(JetStatementList.class);
   }
 
 }

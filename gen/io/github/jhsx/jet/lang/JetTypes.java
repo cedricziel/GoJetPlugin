@@ -12,6 +12,9 @@ public interface JetTypes {
 
   IElementType ADDITIVE_EXPR = new JetCompositeElementType("ADDITIVE_EXPR");
   IElementType AND_EXPR = new JetCompositeElementType("AND_EXPR");
+  IElementType BLOCK_CONTENT_STATEMENT = new JetCompositeElementType("BLOCK_CONTENT_STATEMENT");
+  IElementType BLOCK_PARAMETER = new JetCompositeElementType("BLOCK_PARAMETER");
+  IElementType BLOCK_PARAMETER_LIST = new JetCompositeElementType("BLOCK_PARAMETER_LIST");
   IElementType BLOCK_STATEMENT = new JetCompositeElementType("BLOCK_STATEMENT");
   IElementType CALL_EXPR = new JetCompositeElementType("CALL_EXPR");
   IElementType CONDITIONAL_EXPR = new JetCompositeElementType("CONDITIONAL_EXPR");
@@ -42,6 +45,9 @@ public interface JetTypes {
   IElementType STATEMENT_LIST = new JetCompositeElementType("STATEMENT_LIST");
   IElementType STRING_EXPR = new JetCompositeElementType("STRING_EXPR");
   IElementType TERNARY_EXPR = new JetCompositeElementType("TERNARY_EXPR");
+  IElementType YIELD_CONTENT_STATEMENT = new JetCompositeElementType("YIELD_CONTENT_STATEMENT");
+  IElementType YIELD_PARAMETER = new JetCompositeElementType("YIELD_PARAMETER");
+  IElementType YIELD_PARAMETER_LIST = new JetCompositeElementType("YIELD_PARAMETER_LIST");
   IElementType YIELD_STATEMENT = new JetCompositeElementType("YIELD_STATEMENT");
 
   IElementType ASSIGN = new JetTokenType("=");
@@ -53,6 +59,7 @@ public interface JetTypes {
   IElementType COMMENT = new JetTokenType("");
   IElementType COND_AND = new JetTokenType("&&");
   IElementType COND_OR = new JetTokenType("||");
+  IElementType CONTENT = new JetTokenType("content");
   IElementType DIV = new JetTokenType("/");
   IElementType DOT = new JetTokenType(".");
   IElementType ELSE = new JetTokenType("else");
@@ -65,7 +72,6 @@ public interface JetTypes {
   IElementType IF = new JetTokenType("if");
   IElementType IMPORT = new JetTokenType("import");
   IElementType INCLUDE = new JetTokenType("include");
-  IElementType ISSET = new JetTokenType("isset");
   IElementType LBRACKETS = new JetTokenType("[");
   IElementType LDOUBLE_BRACE = new JetTokenType("{{");
   IElementType LESS = new JetTokenType("<");
@@ -88,6 +94,7 @@ public interface JetTypes {
   IElementType TERNARY = new JetTokenType("?");
   IElementType TEXT = new JetTokenType("TEXT");
   IElementType YIELD = new JetTokenType("yield");
+  IElementType YIELDPARAMETER_1_0 = new JetTokenType("YieldParameter_1_0");
 
   class Factory {
     public static PsiElement createElement(ASTNode node) {
@@ -97,6 +104,15 @@ public interface JetTypes {
       }
       else if (type == AND_EXPR) {
         return new JetAndExprImpl(node);
+      }
+      else if (type == BLOCK_CONTENT_STATEMENT) {
+        return new JetBlockContentStatementImpl(node);
+      }
+      else if (type == BLOCK_PARAMETER) {
+        return new JetBlockParameterImpl(node);
+      }
+      else if (type == BLOCK_PARAMETER_LIST) {
+        return new JetBlockParameterListImpl(node);
       }
       else if (type == BLOCK_STATEMENT) {
         return new JetBlockStatementImpl(node);
@@ -187,6 +203,15 @@ public interface JetTypes {
       }
       else if (type == TERNARY_EXPR) {
         return new JetTernaryExprImpl(node);
+      }
+      else if (type == YIELD_CONTENT_STATEMENT) {
+        return new JetYieldContentStatementImpl(node);
+      }
+      else if (type == YIELD_PARAMETER) {
+        return new JetYieldParameterImpl(node);
+      }
+      else if (type == YIELD_PARAMETER_LIST) {
+        return new JetYieldParameterListImpl(node);
       }
       else if (type == YIELD_STATEMENT) {
         return new JetYieldStatementImpl(node);

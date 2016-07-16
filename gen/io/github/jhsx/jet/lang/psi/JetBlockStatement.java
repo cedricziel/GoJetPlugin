@@ -8,13 +8,16 @@ import com.intellij.psi.PsiElement;
 public interface JetBlockStatement extends JetStatement {
 
   @Nullable
-  JetEndStatement getEndStatement();
+  JetBlockParameterList getBlockParameterList();
 
-  @NotNull
-  List<JetExpression> getExpressionList();
+  @Nullable
+  JetIdentifierExpr getIdentifierExpr();
 
-  @NotNull
-  List<JetPipeline> getPipelineList();
+  @Nullable
+  JetPipeline getPipeline();
+
+  @Nullable
+  JetStatement getStatement();
 
   @Nullable
   JetStatementList getStatementList();

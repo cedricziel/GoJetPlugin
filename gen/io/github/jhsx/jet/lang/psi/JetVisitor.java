@@ -15,6 +15,18 @@ public class JetVisitor extends PsiElementVisitor {
     visitExpression(o);
   }
 
+  public void visitBlockContentStatement(@NotNull JetBlockContentStatement o) {
+    visitStatement(o);
+  }
+
+  public void visitBlockParameter(@NotNull JetBlockParameter o) {
+    visitPsiElement(o);
+  }
+
+  public void visitBlockParameterList(@NotNull JetBlockParameterList o) {
+    visitPsiElement(o);
+  }
+
   public void visitBlockStatement(@NotNull JetBlockStatement o) {
     visitStatement(o);
   }
@@ -137,6 +149,18 @@ public class JetVisitor extends PsiElementVisitor {
 
   public void visitTernaryExpr(@NotNull JetTernaryExpr o) {
     visitExpression(o);
+  }
+
+  public void visitYieldContentStatement(@NotNull JetYieldContentStatement o) {
+    visitStatement(o);
+  }
+
+  public void visitYieldParameter(@NotNull JetYieldParameter o) {
+    visitPsiElement(o);
+  }
+
+  public void visitYieldParameterList(@NotNull JetYieldParameterList o) {
+    visitPsiElement(o);
   }
 
   public void visitYieldStatement(@NotNull JetYieldStatement o) {

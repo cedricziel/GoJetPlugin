@@ -26,15 +26,33 @@ public class JetYieldStatementImpl extends JetStatementImpl implements JetYieldS
   }
 
   @Override
-  @NotNull
-  public List<JetExpression> getExpressionList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, JetExpression.class);
+  @Nullable
+  public JetEndStatement getEndStatement() {
+    return findChildByClass(JetEndStatement.class);
   }
 
   @Override
-  @NotNull
-  public List<JetPipeline> getPipelineList() {
-    return PsiTreeUtil.getChildrenOfTypeAsList(this, JetPipeline.class);
+  @Nullable
+  public JetIdentifierExpr getIdentifierExpr() {
+    return findChildByClass(JetIdentifierExpr.class);
+  }
+
+  @Override
+  @Nullable
+  public JetPipeline getPipeline() {
+    return findChildByClass(JetPipeline.class);
+  }
+
+  @Override
+  @Nullable
+  public JetStatementList getStatementList() {
+    return findChildByClass(JetStatementList.class);
+  }
+
+  @Override
+  @Nullable
+  public JetYieldParameterList getYieldParameterList() {
+    return findChildByClass(JetYieldParameterList.class);
   }
 
 }
